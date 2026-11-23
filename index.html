@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Смешарики: Спорт и Дружба!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="theme-friendship">
+
+    <!-- Декоративные смешарики по бокам -->
+<img src="Images/Romashka.png" alt="Крош" class="decor-char decor-tl" onerror="this.style.display='none'">
+<img src="Images/Romashka.png" alt="Нюша" class="decor-char decor-tr" onerror="this.style.display='none'">
+<img src="Images/Romashka.png" alt="Пин" class="decor-char decor-bl" onerror="this.style.display='none'">
+<img src="Images/Romashka.png" alt="Совунья" class="decor-char decor-br" onerror="this.style.display='none'">
+<img src="Images/Romashka.png" alt="Ёжик" class="decor-char decor-l" onerror="this.style.display='none'">
+<img src="Images/Romashka.png" alt="Кар-Карыч" class="decor-char decor-r" onerror="this.style.display='none'">
+
+    <!-- Шапка в журнальном стиле -->
+    <header class="magazine-header">
+        <div class="header-inner">
+            <div class="header-tag">✦ Любимые смешарики ✦</div>
+            <h1 class="header-title">
+                <span class="script-text">The</span>
+                <span class="bold-text">Смешарики</span>
+            </h1>
+            <p class="header-subtitle">Урок спорта · Дружба · Веселье</p>
+            <div class="header-wave"></div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Секция с видео -->
+       <!-- Секция с видео -->
+<section class="magazine-section video-section">
+    <div class="section-label">🎬 СМОТРИМ СЕРИЮ</div>
+    <h2 class="section-title">
+        <span class="script-text">Серия</span> про спорт
+    </h2>
+    
+    <!-- Вместо iframe теперь красивая карточка-превью -->
+    <a href="https://vkvideo.ru/video-21665793_456242750" target="_blank" class="video-link-card">
+        <div class="video-preview">
+            <div class="play-button-large">▶</div>
+            <div class="preview-text">Нажми, чтобы посмотреть серию!</div>
+        </div>
+    </a>
+
+    <div class="video-meta">
+        <span class="meta-score">5.0</span>
+        <span class="meta-stars">★★★★★</span>
+        <span class="meta-text">100 отзывов · Топ рейтинг</span>
+    </div>
+</section>
+
+        <!-- Секция выбора темы -->
+        <section class="magazine-section themes-section">
+            <div class="section-label">💡 ВЫБЕРИ СМЫСЛ</div>
+            <h2 class="section-title">
+                <span class="script-text">Какой смысл</span> ты видишь?
+            </h2>
+            
+           <div class="themes-grid">
+    <button class="theme-card" data-theme="theme-friendship">
+        <div class="card-top">🤝</div>
+        <div class="card-body">
+            <h3 class="card-title">Дружба важнее победы</h3>
+            <p>Главное не медали, а поддержка друзей</p>
+        </div>
+    </button>
+
+    <button class="theme-card" data-theme="theme-fairplay">
+        <div class="card-top">⚖️</div>
+        <div class="card-body">
+            <h3 class="card-title">Честная игра</h3>
+            <p>Побеждать нужно по правилам, без обмана</p>
+        </div>
+    </button>
+
+    <button class="theme-card" data-theme="theme-overcome">
+        <div class="card-top">💪</div>
+        <div class="card-body">
+            <h3 class="card-title">Преодоление себя</h3>
+            <p>Самый главный соперник — это ты сам</p>
+        </div>
+    </button>
+
+    <button class="theme-card" data-theme="theme-teamwork">
+        <div class="card-top">👥</div>
+        <div class="card-body">
+            <h3 class="card-title">Командная работа</h3>
+            <p>Вместе мы можем достичь любых высот</p>
+        </div>
+    </button>
+
+    <button class="theme-card" data-theme="theme-health">
+        <div class="card-top">🍏</div>
+        <div class="card-body">
+            <h3 class="card-title">Здоровье и радость</h3>
+            <p>Движение — это жизнь и хорошее настроение</p>
+        </div>
+    </button>
+
+    <button class="theme-card" data-theme="theme-persistence">
+        <div class="card-top">🌟</div>
+        <div class="card-body">
+            <h3 class="card-title">Не сдавайся!</h3>
+            <p>Даже если всё идёт не по плану, пробуй ещё</p>
+        </div>
+    </button>
+</div>
+
+            <div id="theme-message" class="theme-message"></div>
+
+           <!-- Ленточка с цитатой -->
+<div id="quote-ribbon" class="quote-ribbon hidden">
+    <img id="ribbon-char-left" class="ribbon-char ribbon-char-left hidden" src="" alt="">
+    <div class="ribbon-content">
+        <p id="ribbon-text"></p>
+        <small id="ribbon-author"></small>
+    </div>
+    <img id="ribbon-char-right" class="ribbon-char ribbon-char-right hidden" src="" alt="">
+</div>
+        </section>
+
+        <!-- Секция теста -->
+        <section class="magazine-section quiz-section">
+            <div class="section-label">🎯 ПРОЙДИ ТЕСТ</div>
+            <h2 class="section-title">
+                <span class="script-text">Какой ты</span> Смешарик?
+            </h2>
+            
+            <form id="quiz-form">
+                <div class="quiz-card">
+                    <div class="question-number">ВОПРОС 1</div>
+                    <p class="question-text">Что ты любишь делать в свободное время?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q1" value="krosh">
+                            <span class="option-text">Играть в футбол, бегать и прыгать!</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="yozhik">
+                            <span class="option-text">Читать книги, коллекционировать фантики</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="nyusha">
+                            <span class="option-text">Мечтать, ухаживать за собой и наряжаться</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q1" value="pin">
+                            <span class="option-text">Изобретать что-то новое и чинить технику</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="question-number">ВОПРОС 2</div>
+                    <p class="question-text">Как ты реагируешь на проблемы?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q2" value="krosh">
+                            <span class="option-text">Решаю их сразу и с энтузиазмом!</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="yozhik">
+                            <span class="option-text">Волнуюсь, но стараюсь найти логичный выход</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="nyusha">
+                            <span class="option-text">Прошу помощи у друзей или расстраиваюсь</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q2" value="pin">
+                            <span class="option-text">Анализирую ситуацию и создаю план действий</span>
+                        </label>
+                    </div>
+                </div>
+
+                <div class="quiz-card">
+                    <div class="question-number">ВОПРОС 3</div>
+                    <p class="question-text">Твой любимый вид спорта?</p>
+                    <div class="options">
+                        <label class="option">
+                            <input type="radio" name="q3" value="krosh">
+                            <span class="option-text">Футбол, прыжки на скакалке, активные игры</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="yozhik">
+                            <span class="option-text">Шахматы, спокойная ходьба, йога</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="nyusha">
+                            <span class="option-text">Фигурное катание, гимнастика, танцы</span>
+                        </label>
+                        <label class="option">
+                            <input type="radio" name="q3" value="pin">
+                            <span class="option-text">Автоспорт, технические виды, киберспорт</span>
+                        </label>
+                    </div>
+                </div>
+
+                <button type="button" id="submit-quiz" class="submit-btn">Узнать результат! 🎉</button>
+            </form>
+
+            <div id="quiz-result" class="quiz-result hidden">
+                <div class="result-badge">ТВОЙ РЕЗУЛЬТАТ</div>
+                <img id="result-image" src="" alt="Смешарик" class="result-image">
+                <h3 id="result-title"></h3>
+                <p id="result-description"></p>
+                <div class="result-rating">
+                    <span class="result-score">100%</span>
+                    <span class="result-stars">★★★★★</span>
+                </div>
+                <button id="reset-quiz" class="reset-btn">Пройти ещё раз</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Декоративная лента внизу -->
+    <div class="bottom-ribbon">
+        <span>✦ СМЕШАРИКИ ✦</span>
+        <span>✦ СПОРТ ✦</span>
+        <span>✦ ДРУЖБА ✦</span>
+        <span>✦ ПОБЕДА ✦</span>
+        <span>✦ ВЕСЕЛЬЕ ✦</span>
+    </div>
+
+    <footer>
+        <p>Сделано с любовью к Смешарикам! 🌈 © 2026</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
